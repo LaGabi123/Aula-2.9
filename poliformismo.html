@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            fazerSom() {
+                console.log("fazer um som..")
+            }
+        }
+        class Galinha extends Animal//classe filha Galinha / Pai Animal 
+        {
+            fazerSom() {
+                console.log("Cô..Cô..Cô..")
+            }
+        }
+        class Cachorro extends Animal//classe filha Cachorro / Pai Animal 
+        {
+            fazerSom() {
+                console.log("Au..Au..Au..")
+            }
+        }
+        class Gato extends Animal//classe filha Gato / Pai Animal 
+        {
+            fazerSom() {
+                console.log("Miau..Miau..Miau..")
+            }
+        }
+        var animal = new Animal()
+        animal.fazerSom()
+        var cachorro = new Cachorro()
+        cachorro.fazerSom()
+    </script>
+</body>
+
+</html>
